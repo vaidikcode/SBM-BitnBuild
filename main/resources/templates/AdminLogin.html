@@ -1,0 +1,32 @@
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::#title},~{})}">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title id="title">login</title>   
+</head>
+<body> 
+        <div id="content" style="margin-top:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;">
+    <a  class="block max-w-sm p-6 border-t-4 rounded-lg shadow" style="border-color: #e9ded0;"> 
+    <h5 class="mb-2 text-2xl font-bold tracking-tight dark:text-white" style="color: black; font-weight: bold;">login</h5>
+    <p style="margin-bottom: 5px; color: black; font-weight: bold;" class="font-normal  dark:text-gray-400">Manage contacts using Contact Manager...</p>
+    <form>
+          <div class="mb-1">
+            <label for="email" class="block mb-2 text-sm font-medium  dark:text-white" style="color: black; font-weight: bold;">Email</label>
+            <input name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+          </div>
+          <div class="mb-1">
+            <label for="password" class="block mb-2 text-sm font-medium  dark:text-white" style="color: black; font-weight: bold;">Password</label>
+            <input name="password" type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+          </div> 
+        </form>
+    </a> 
+    <div class="login_button14457" style="height:40px; width:100px; font-size:19px; text-align:center;">
+       <button type="submit" style="background-color:white; border: 3px solid #d1a38c; padding:6px; border-radius:20px">
+        <a data-th-href="@{'/AdminPage'}">Login</a>
+       </button>
+    </div>
+</body>
+</html>

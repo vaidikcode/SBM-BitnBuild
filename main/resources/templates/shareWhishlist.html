@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::#title},~{})}">
+<head>
+    <title id="title">Send Wishlist</title>  
+</head>
+<body> 
+    <div id="content" style="margin-top: 100px;">
+        <section id="wishlist">
+            <h2>Books in Your Wishlist</h2>
+            <ul id="book-list">
+                <!-- Example wishlist items -->
+                <li>
+                    <img src="https://m.media-amazon.com/images/I/71QKQ9mwV7L._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+                    <div class="book-info">
+                        <h2>The Subtle Art of Not Giving a Fuck</h2>
+                        <p>by Mark Manson</p>
+                        <p>₹158.00</p>
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <img src="https://m.media-amazon.com/images/I/61HAE8zahLL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+                    <div class="book-info">
+                        <h2>The Alchemist </h2>
+                        <p>by Paulo Coelho</p>
+                        <p>₹254.00 </p>
+                    </div>
+                </li>
+                <!-- More books can be added here -->
+            </ul>
+        </section>
+    
+        <section id="share">
+            <h2>Share Your Wishlist</h2>
+            <div class="share-options">
+                <input type="text" id="wishlist-link" value="https://yourbookstore.com/wishlist/123" readonly>
+                <button onclick="copyLink()">Copy Link</button>
+            </div>
+            <div class="email-share">
+                <input type="email" id="email" placeholder="Enter email to share">
+                <button>Send Wishlist</button>
+            </div>
+        </section>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::#title},~{})}">
+<head>
+    <title id="title">Guide</title>   
+</head>
+<body> 
+    <div id="content" style="margin-top: 100px;">
+        <header class="header">
+            <!-- Header Greetings -->
+            <h1 class="title">Hello, there</h1>
+            <p class="subtitle">How can I help you today?</p>
+        
+            <!-- Suggestion list -->
+            <ul class="suggestion-list">
+              <li class="suggestion">
+                <h4>Help me find any book.</h4>
+                <span class="icon material-symbols-rounded">draw</span>
+              </li>
+              <li class="suggestion">
+                <h4>How do i contact book store owner? </h4>
+                <span class="icon material-symbols-rounded">lightbulb</span>
+              </li>
+              <li class="suggestion">
+                <h4>How do i know which books are available?</h4>
+                <span class="icon material-symbols-rounded">explore</span>
+              </li>
+              <li class="suggestion">
+                <h4>When does the book store closes.</h4>
+                <span class="icon material-symbols-rounded">code</span>
+              </li>
+            </ul>
+          </header>
+        
+          <!-- Chat List / Container -->
+          <div class="chat-list"></div>
+        
+          <!-- Typing Area -->
+          <div class="typing-area">
+            <form action="#" class="typing-form">
+              <div class="input-wrapper">
+                <input type="text" placeholder="Enter a prompt here" class="typing-input" required />
+                <button id="send-message-button" class="icon material-symbols-rounded">send</button>
+              </div>
+            </form>
+            <p class="disclaimer-text">
+            </p>
+          </div>
+    </div>  
+</body>
+</html>
